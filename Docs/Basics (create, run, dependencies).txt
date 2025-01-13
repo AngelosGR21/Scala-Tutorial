@@ -1,0 +1,25 @@
+Creating a project via the sbt command (sbt is a build tool for scala)
+
+
+Creating a scala project: sbt new scala/scala3.g8 
+
+Running the project : 
+1. cd into the project directory
+2. Run "sbt" this will open the sbt console
+3. Type ~run (the ~ is optional and causes sbt to re-run on every file save)
+
+
+Adding a dependency: 
+
+Inside build.sbt, we can add dependencies by appending to the libraryDependencies 
+
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
+
+To add multiple dependencies
+
+ libraryDependencies ++= Seq(
+      "org.scalameta" %% "munit" % "1.0.0" % Test,
+      "com.example" %% "example-library" % "1.0.0"
+    )
+
+Scaladex is the place where to find dependencies

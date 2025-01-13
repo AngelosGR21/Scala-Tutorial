@@ -1,0 +1,33 @@
+Map - a set of key value pairs, keys are unique
+
+There's 2 ways of defining maps
+
+1. With arrows >>    Map(1 -> "one", 2 -> "two")
+2. With parenthesis and commas >> Map((1, "one"), (2, "two))
+
+To access a value we use >> MapName(key)
+To access all keys >> mapName.keySet
+To access all values >> mapName.values
+
+HashMaps - mutable Map
+
+To create >> val count = HashMap(1 -> "one", 2 -> "two")
+
+To add a key value pair >> count += (4 -> "four") Or count.addOne((4 -> "four"))
+To add a collection >> count ++= Map(4 -> "four") Or count.addAll((4 -> "four"))
+To remove a collection >> count --= Set(1,2,3)
+To remove a single key >> count -= 1 Or count.remove(1)
+To clear a hashMap >> count.clear()
+
+
+Map Functions
+
+val count = Map(1 -> "one", 2 -> "two", 3 -> "three")
+
+count.size >> returns the length of the map
+count.contains(3) >> contains checks for the key
+count.head >> returns the first key value pair
+count.tail >> returns all key value pairs except the first one
+count.isEmpty >> returns if the map is empty
+
+

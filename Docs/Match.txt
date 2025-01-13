@@ -1,0 +1,98 @@
+Match conditional
+
+Make decisions based on values of a variable or expression
+
+
+(variable || expression) match
+	case "dog" => perform action
+	case "cat" => perform action
+	case _ => perform action (this is the default)
+
+
+Match can also return a value meaning they can be assigned as variables
+
+  val action = input match
+      case "dog" => "pet it"
+      case "cat" => "feed it"
+      case "crocodile" => "run away"
+      case _ => "google it"
+
+
+If multiple cases go through the same logic we can combine the cases with a pipe
+
+case "dog" | "cat" | "hamster" => "pet it"
+
+We can also match lists, but they need to be identical and follow the same order
+
+  val numbers = List(1,3,2)
+
+  numbers match
+    case List(1,2,3) => println("single digits")
+    case List(10,11,12) => println("double digits")
+    case _ => println("unknown")
+
+We can also match tuples
+
+val animalFeed = ("cat", "catFood")
+
+  animalFeed match
+    case ("cat", _) => println("cat info")  << this matches if the tuple starts with the element "cat"
+    case ("dog", _) => println("dog info")
+    case _ => println("random tuple")
+
+_ inside the tuple stands for anything else
+
+
+
+Guards - these are if expressions for the case values
+
+  val weekday = "Monday"
+  val isItAm = false
+
+  weekday match
+    case "Saturday" if isItAm => println("Sleeping")
+    case "Sunday" if isItAm => println("Do chores")
+    case "Saturday" | "Sunday" if !isItAm => println("Go out and have fun")
+    case _ => println("Go to work")
+
+
+
+We can also capture the number to a case variable. For example :
+  
+  val number = Random.nextInt(20)
+
+  number match
+    case x if 0 until 10 contains number => println(s"Single digit $x")
+
+Above the variable "x" will inherit the number variable
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

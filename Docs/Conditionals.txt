@@ -1,0 +1,15 @@
+If conditional (if,else if, else)
+
+  if(test)
+    println("In if")
+  else
+    println("In else")
+
+You can assign conditionals
+
+isEven = if (number % 2 == 0) "Number is Even" else "Number is odd"
+
+
+
+
+Match conditional (switch)

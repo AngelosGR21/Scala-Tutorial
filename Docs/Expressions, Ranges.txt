@@ -1,0 +1,49 @@
+Arithmetic expressions are expressions that consist of variables and operators that evaluate to a single value
+
+
+Ranges - a collection that contains all the elements between two given values
+
+To :
+1 to 10 >> will return the range of numbers from 1 up to 10
+'a' to 'z' >> will return the range of letters from a to z
+
+
+To visualise a range it would be best to transform it into a list with the method .toList
+
+
+Until : (returns the range of elements -1, ex 1 until 10 will be 1-9)
+
+1 until 10 >> will return the range of numbers from 1 to 9 excluding 10
+'a' until 'z' >> will return the range of letters from 'a' to 'y' excluding 'z'
+
+To, By:
+1 to 10 by 2 >> will return the range of numbers from 1 to 10 by stepping over 2 elements at a time
+
+Another way of creating ranges
+
+Range(1, 10) - this works similar to until meaning it will skip the last element
+Range.inclusive(1,10) - this works similar to "to" meaning it will add the last element
+
+Range methods
+
+r.step >> returns the step of the range
+r.contains() >> returns a boolean if it contains a specific value
+r.head >> returns the first element of the range
+r.tail >> returns all the elements except the first one from the range
+r.last >> returns the last element of the range
+r.end >> returns the end of the range (for example 1 to 10 by 2, end will return the 10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

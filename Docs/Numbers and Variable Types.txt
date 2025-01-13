@@ -1,0 +1,59 @@
+Number types
+
+Type = Size (bits) =   Min value        =     Max value
+Byte =      8      =    -128            =      127
+Short=     16      =    -32768          =      32767
+Int  =     32      =    -2147483648     =      2147483647 (2^31 - 1)
+Long =     64      =    -9,223,372,036..=      9,223,372,036.... 
+
+Decimal Types
+
+Type = Size (bits) =   Decimal Digits
+Float=     32      =    6-7
+Double=    64      =    15-16
+
+
+We can add _ between numbers to increase readability for long number for example
+
+If we have long numbers (For example longer than 2.147b) we need to add the L at the end of the number to
+specify that the number is Long.
+
+Same goes for Float decimals if we want to tag them as floats
+
+
+Implicit vs Explicit
+
+Implicit numbers are decided by scala (For example assigning val cats = 3 // Int)
+Scala will decide the most appropriate variable type based on the value provided
+
+We can instruct Scala to assign a different type to our variables
+val dogs: Byte = 5 // Byte
+
+Type conversions
+
+Variable of certain type can be converted into a different type
+val cats = 3 // Int
+val longCats = cats.toLong // Long
+
+If we convert to a smaller type some information will be lost
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

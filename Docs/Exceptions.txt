@@ -1,0 +1,31 @@
+An exception is an unexpected event in a program
+
+Try Catch
+
+Catch can have multiple cases where we provide different error types and respond accordingly to that
+
+try{
+... some code
+}catch {
+case e: Exception => {...do stuff}
+case f: NumberFormatException => {...do stuff}
+}
+
+
+e.printStackTrace() will print the stack trace of the error
+
+Finally
+
+A finally block will be executed whether or not an exception occurs
+
+try{
+... some code
+}catch {
+case e: Exception => e.printStackTrace()
+}finally{
+println("The execution completed")
+}
+
+Throw
+
+throw IllegalStateException(message) << this is how you throw exceptions

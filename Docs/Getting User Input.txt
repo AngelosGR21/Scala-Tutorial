@@ -1,0 +1,13 @@
+To get the user input from the console we need to import the package StdIn and use the method readLine()
+
+StdIn.readLine() << will pause execution and await for user input
+
+Input to number
+
+the method .toInt on strings will translate the string into a number but if there is no number within
+it will throw an exception
+
+
+Random Data (This is a package)
+
+Random.nexInt()

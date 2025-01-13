@@ -1,0 +1,63 @@
+List - Immutable, ordered collection that can contain duplicate elements
+
+Data type which returns an empty list called Nil
+
+We can limit the data type by providing a type in square brackets ex:
+val m = List[Int](1, 2, 3, true) // error
+
+
+We can have multidimensional lists
+
+val matrix = 
+ List(
+	List(1, 0, 1),
+	List(0, 1, 0),
+	List(0, 0, 1)
+)
+
+Lists have head and tails
+
+the head will be the first element of the list
+the tail of the list is everything else except the first element
+
+
+Array - Same as list but mutable, ordered collection
+
+val t = Array(1,2,3,4)
+
+We can limit the data type by providing a type in square brackets
+
+val b = Array[String]("a", "b", test) // error
+
+If we want to print an array we need can by running the following lines
+a.foreach(println) << Iterates through each value and prints it
+println(a.mkString) << It will concat all the values in a string
+println(a.toList) << Transforms the array into a list and prints it
+
+The size of the array cannot be changed
+
+b = 0 +: a :+ 4
+To add to the beginning of the array we specify the value followed by +:
+To add after the elements of a we use :+ and the value
+
+We can concatinate 2 arrays buy using ++ >>> c = a ++ b
+
+
+ArrayBuffer - an array whose size can be changed
+
+We can add or remove elements
+We can also print the arraybuffer directly as it has a nicer format
+
+To remove all elements of a collection we can use
+a --= List(4,7,8)
+
+
+Memory efficiency
+
+Lists  > Array > ArrayBuffer
+
+
+
+
+
+

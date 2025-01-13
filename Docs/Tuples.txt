@@ -1,0 +1,25 @@
+Tuple - An ordered immutable group of elements
+
+
+We can specify how many elements our tuple is going to have (ex conn2)
+
+  val conn = (80, "www", "google.com", true)
+  val conn2 = Tuple4(80, "www", "google.com", true)
+
+We can specify what data types we would like to have
+
+	val conn = Tupple[Int | String](80, "www", "google.com", true)
+
+Retrieve elements ( 2 ways)
+
+1. conn(1) >> by index
+2. conn._1 >> by position
+
+
+Functions
+
+conn.toString() >> will concatenate the elements into a string separated by comma
+conn.productArity >> returns the size of the tuple
+conn.copy(_2 = "ftp") >> returns a new copy of the original tuple "conn" with the position 2 updated to ftp
+conn.swap >> returns a new tuple but with the values swapped (works only for tuple2)
+conn ++ conn2 >> returns a new tuple concatenated from the 2 tuples given

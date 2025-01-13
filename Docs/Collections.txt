@@ -1,0 +1,47 @@
+Collections are a way to group elements together
+
+Iterable is the main class out of which all the other collection data structures are derived from
+
+0. Iterators
+Iterators is an object that loops through elements of a collection
+They are useful when we want to apply the same logic to all elements
+
+1. List - immutable (is like an array but is immutable)
+
+Ordered collection
+Elements can be accessed by the position (index)
+Can contain duplicate elements
+
+2. Array - mutable
+
+3. Set
+
+group of unique elements
+The order has no significance
+We can iterate through them but the order is not defined
+
+
+4. HashSet
+
+5. Map
+A set of key-value pairs
+keys are unique
+values can be duplicates
+There's no order
+
+
+6. HashMap
+
+7. Tuple - immutable
+A fixed size group of various data types
+Can contain duplicates
+The type of tuple depends on the number of elements
+
+
+
+
+
+
+
+
+

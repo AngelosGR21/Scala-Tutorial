@@ -1,0 +1,49 @@
+Arithmetic operators
+
+If we are dividing 2 integers we will receive an integer back
+5 / 2 = 2
+We need to convert the 5 into a double or float for this to work
+5d / 2 = 2.5
+Modulus works the same as in js
+
+
+Result types
+
+The type of the result of an operation is the same as the type
+of the largest operand in terms of the size in memory
+
+Byte < Short < Int < Long < Float < Double
+
+
+Assignment operators
+
+= Assignment
+$ Reference
+${} Reference expression
+
+Augmented assignment operator
++=
+-= 
+*=
+/=
+%=
+
+Logical operators
+
+&& - And
+|| - Or
+! - Not
+
+Comparison Operators
+
+>  - Greater than
+<  - Less than
+>= - Greater than or equal to
+<= - Less than or equal to
+== - Equals
+!= - not equals
+
+
+
+
+

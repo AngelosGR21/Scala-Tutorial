@@ -1,0 +1,53 @@
+Set - stores unique elements in an undefined order
+
+to create a set >> Set(6, 34, 6, 42)
+
+Data types can vary but can be limited >> Set[Int](1,3,5)
+
+Sets are immutable 
+
+
+HashSets - A mutable set
+
+We can add and remove elements in a hashSet
+values.add(element)  || values+= 9
+values.remove(element) || values -= 3
+
+We can also add or remove another collection
+
+values.addAll( List(1,2,3) ) >> Will add all values from the collection
+values += (10, 11) >> will add both elements from the collection
+values -= (2, 4) >> will remove all elements from the collection
+
+colors ++= Set("pink", "orange") >> another way 
+colors --= Set("pink", "orange")
+
+
+Set and Hash set functions
+
+Set.size >>>> this returns an integer that represents the size of the Set
+Set.contains(value) 
+Set.isEmpty >> if it's empty
+Set.nonEmpty >> if it's not empty
+Set.head >> returns the first element of the set (this is random)
+Set.tail >> returns a set of all the elements except the first one (this is random)
+
+HashSet.addOne() >> will add one element to the hashSet
+HashSet.addAll() >> will add all elements from the collection given
+HashSet.remove() >> will remove all elements from the collection given
+HashSet.subtractOne() >> will remove one element from the set
+
+The following do not modify the HashSet and return a new HashSet
+
+HashSet.intersect(Set) >> will return a hashSet with the elements that appear in both sets
+HashSet.union(Set) >> will combine both sets
+HashSet.diff(Set) >> will return the elements that are not in HashSet
+
+
+
+
+
+
+
+
+

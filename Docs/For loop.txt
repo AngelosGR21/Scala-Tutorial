@@ -1,0 +1,44 @@
+For loop will execute with either a collection or range
+  
+  With collection: 
+  
+  val animals = List("Cat", "Dog", "Mouse", "Horse")
+  
+  for (animal <- animals)
+    println(s"Feeding the $animal")
+  
+  With range :
+  
+  for(i <- 1 to 12)
+    println(i)
+
+A loop can have multiple parameters, by passing more parameters it's as if we're nesting for loops
+
+   for(row <- 1 to 5; column <- 3 to 9)
+    println(s"x = $row, y = $column")
+
+For the above it will print
+x = 1 y = 3
+x = 1 y = 4
+x = 1 y = 5
+.....
+x = 2 y = 3
+x = 2 y = 4
+x = 2 y = 5
+.....
+
+A loop can also have filters
+
+  val clients = List("Alice", "Bob", "Carol", "Britney", "Tom")
+  for(client <- clients if client.length > 4)
+    println(client)
+
+
+A loop can also be assigned to a variable by using the word yield before the value that we want to return
+
+  val output = for (client <- clients if client.length > 4)
+    yield client
+  
+  println(output) >>> List(Alice, Carol, Britney)
+
+

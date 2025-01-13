@@ -1,0 +1,38 @@
+Strings are within double quotes and can contain any alphanumerical characters as well as special characters except
+
+double quotes: " " " // not possible
+backslash : " \ " // not possible
+
+
+String escapes
+
+\t - Will add a tab space
+\b - Will add a backspace
+\n - New line
+\" - Double quote
+\\ - Forward slash
+
+To have multiline on strings you can use """ """, stripMargin will be added automatically by the ide
+
+
+Variables
+
+Once you have assigned a type to a variable afterwards you cannot change that value to a different type
+
+Muttable : var
+Imuttable: val
+
+String interpolators
+
+3 types of interpolators
+
+s : Regular way where you provide a variable with just the $. If you want to have expressions within the string
+you need to have them in curly braces ${}
+raw : Will not escape characters and will display the raw text
+f: to be filled
+
+
+
+
+
+
